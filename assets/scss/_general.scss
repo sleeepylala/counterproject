@@ -10,17 +10,10 @@ body {
   }
   main {
     border: 3px solid rgb(72, 0, 255);
+    display: flex;
+    flex-direction: column;
   }
   section {
     border: 3px solid rgb(128, 255, 0);
   }
 }
-
-// .contenitore-console {
-//   height: 100%;
-//   .base-console {
-//     width: 1017px;
-//     height: 478px;
-//     flex-shrink: 0;
-//   }
-// }
