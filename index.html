@@ -9,6 +9,12 @@
       type="image/x-icon"
       href="assets/images/favicon/favicon.svg"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -17,7 +23,25 @@
         <h1 class="titolo">Vintage Counter Game!</h1>
       </div>
       <section>
-        <div class="base-console"></div>
+        <div class="base-console">
+          <div class="contenitore-sinistro">
+            <div class="contenitore-tasto-on">
+              <button class="button-on">
+                <img src="assets/images/button-icon/icona-power.svg" alt="" />
+              </button>
+            </div>
+            <div class="contenitore-tasto-frecce"></div>
+          </div>
+          <div class="contenitore-schermo">
+            <div class="schermo-console">
+              <div class="display-number">44</div>
+            </div>
+          </div>
+          <div class="contenitore-destro">
+            <div class="contenitore-tasti"></div>
+            <div class="contenitore-tasto-reset"></div>
+          </div>
+        </div>
       </section>
     </main>
     <script src="assets/js/script.js"></script>
