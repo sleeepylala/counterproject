@@ -23,42 +23,49 @@ const arrowBottom = document.querySelector("#freccia-giù");
 const arrowRight = document.querySelector("#freccia-destra");
 const arrowLeft = document.querySelector("#freccia-sinistra");
 
+const COLORS = {
+  YELLOW: "#e9b824",
+  RED: "#FF6D6D",
+  BLUE: "#1572A1",
+  PURPLE: "#AE4CCF",
+  DARK: "#2B2730",
+};
+
 let testBtn = false;
 
 function removeStartOff() {
-  start.style.display = "none";
-  off.style.display = "none";
+  start.style.display = off.style.display = "none";
+}
+function updateConsoleColor(color) {
+  consoleColor.style.backgroundColor = color;
 }
 
 //funzione doppia addizione
 function doppiaAddizione() {
   let numberDisplay = Number(display.textContent);
-  display.textContent = numberDisplay + 2;
+  display.textContent = Number(display.textContent) + 2;
   removeStartOff();
 }
 //funzione doppia sottrazione
 function doppiaSottrazione() {
-  let numberDisplay = Number(display.textContent);
-  display.textContent = numberDisplay - 2;
+  display.textContent = Number(display.textContent) - 2;
   removeStartOff();
 }
 //funzione addizione
 function addizione() {
-  let numberDisplay = Number(display.textContent);
-  display.textContent = numberDisplay + 1;
+  display.textContent = Number(display.textContent) + 1;
   removeStartOff();
 }
 //funzione sottrazione
 function sottrazione() {
-  let numberDisplay = Number(display.textContent);
-  display.textContent = numberDisplay - 1;
+  display.textContent = Number(display.textContent) - 1;
   removeStartOff();
 }
 //funzione tasto reset
 function reset() {
   display.textContent = 0;
-  consoleColor.style.backgroundColor = "#e9b824";
   removeStartOff();
+  updateConsoleColor(COLORS.YELLOW);
 }
 
 //evento tasto on off
@@ -97,15 +104,7 @@ btnOn.addEventListener("click", function () {
 });
 
 //evento frecce
-arrowTop.addEventListener("click", function () {
-  consoleColor.style.backgroundColor = "#FF6D6D";
-});
-arrowBottom.addEventListener("click", function () {
-  consoleColor.style.backgroundColor = "#1572A1";
-});
-arrowLeft.addEventListener("click", function () {
-  consoleColor.style.backgroundColor = "#AE4CCF";
-});
-arrowRight.addEventListener("click", function () {
-  consoleColor.style.backgroundColor = "#2B2730";
-});
+arrowTop.addEventListener("click", () => updateConsoleColor(COLORS.RED));
+arrowBottom.addEventListener("click", () => updateConsoleColor(COLORS.BLUE));
+arrowLeft.addEventListener("click", () => updateConsoleColor(COLORS.PURPLE));
+arrowRight.addEventListener("click", () => updateConsoleColor(COLORS.DARK));
