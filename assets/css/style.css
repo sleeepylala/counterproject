@@ -13623,8 +13623,8 @@ section .base-console .contenitore-destro {
   padding-bottom: 40px;
 }
 section .base-console .contenitore-destro .contenitore-tasti {
-  width: 147px;
-  height: 147px;
+  width: 180px;
+  height: 180px;
 }
 section .base-console .contenitore-destro .contenitore-tasto-reset {
   width: 100%;
@@ -13677,6 +13677,52 @@ section .base-console .contenitore-destro .contenitore-tasto-reset .button-reset
   width: 40px;
   height: 147px;
   background: #d83f31;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contenitore-tasti {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.contenitore-tasti-y,
+.contenitore-tasti-x {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 44px;
+}
+
+.contenitore-tasti-x {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contenitore-tasti-y {
+  width: 80px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
