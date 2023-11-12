@@ -33,6 +33,9 @@ section {
         flex-direction: row;
         justify-content: flex-end;
         .button-on {
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
       .contenitore-tasto-frecce {
@@ -81,6 +84,11 @@ section {
         width: 100%;
         height: 55px;
         border-radius: 0 109px 109px 0;
+        .button-reset {
+          display: inline;
+          justify-content: center;
+          align-items: center;
+        }
       }
     }
   }
