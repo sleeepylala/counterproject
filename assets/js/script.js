@@ -12,12 +12,16 @@ const display = document.querySelector(".display-number");
 //qui seleziono i pulsanti on e reset//
 const btnOn = document.querySelector("#button-start");
 const btnReset = document.querySelector("#button-reset");
+const start = document.querySelector("#start-display");
+const off = document.querySelector("#off-display");
 
 //qui seleziono i pulsanti freccia//
 const arrowTop = document.querySelector("#freccia-su");
 const arrowBottom = document.querySelector("#freccia-giù");
 const arrowRight = document.querySelector("#freccia-destra");
 const arrowLeft = document.querySelector("#freccia-sinistra");
+
+let testBtn = true;
 
 //evento doppia addizione
 btnDoubleAddiction.addEventListener("click", function () {
@@ -40,4 +44,26 @@ btnAddiction.addEventListener("click", function () {
 btnSubstraction.addEventListener("click", function () {
   let numberDisplay = Number(display.textContent);
   display.textContent = numberDisplay - 1;
+});
+
+//evento tasto on
+btnOn.addEventListener("click", function () {
+  testBtn = !testBtn;
+
+  if (testBtn) {
+    console.log("ON");
+
+    start.style.display = "block";
+    off.style.display = "none";
+  } else {
+    console.log("OFF");
+
+    start.style.display = "none";
+    off.style.display = "block";
+  }
+});
+
+//evento tasto reset
+btnReset.addEventListener("click", function () {
+  display.textContent = 0;
 });

@@ -13742,3 +13742,15 @@ section .base-console .contenitore-destro .contenitore-tasto-reset .button-reset
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+.display-start {
+  font-size: 40px !important;
+  color: #d83f31;
+  display: none;
+}
+
+.display-off {
+  font-size: 40px !important;
+  color: black;
+  display: none;
+}
