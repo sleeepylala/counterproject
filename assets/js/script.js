@@ -21,32 +21,40 @@ const arrowBottom = document.querySelector("#freccia-giù");
 const arrowRight = document.querySelector("#freccia-destra");
 const arrowLeft = document.querySelector("#freccia-sinistra");
 
-let testBtn = true;
+let testBtn = false;
+function removeStartOff() {
+  start.style.display = "none";
+  off.style.display = "none";
+}
 
 //evento doppia addizione
 btnDoubleAddiction.addEventListener("click", function () {
   let numberDisplay = Number(display.textContent);
   display.textContent = numberDisplay + 2;
+  removeStartOff();
 });
 
 //evento doppia sottrazione
 btnDoubleSubstraction.addEventListener("click", function () {
   let numberDisplay = Number(display.textContent);
   display.textContent = numberDisplay - 2;
+  removeStartOff();
 });
 
 //evento addizione
 btnAddiction.addEventListener("click", function () {
   let numberDisplay = Number(display.textContent);
   display.textContent = numberDisplay + 1;
+  removeStartOff();
 });
 //evento sottrazione
 btnSubstraction.addEventListener("click", function () {
   let numberDisplay = Number(display.textContent);
   display.textContent = numberDisplay - 1;
+  removeStartOff();
 });
 
-//evento tasto on
+//evento tasto on off
 btnOn.addEventListener("click", function () {
   testBtn = !testBtn;
 
@@ -61,9 +69,11 @@ btnOn.addEventListener("click", function () {
     start.style.display = "none";
     off.style.display = "block";
   }
+  display.textContent = "";
 });
 
 //evento tasto reset
 btnReset.addEventListener("click", function () {
   display.textContent = 0;
+  removeStartOff();
 });
