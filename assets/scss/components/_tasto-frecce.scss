@@ -1,0 +1,32 @@
+.contenitore-tasto-frecce {
+  position: relative;
+  width: 147px;
+  height: 147px;
+}
+
+.freccia-x,
+.freccia-y {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 44px;
+}
+
+.freccia-x {
+  width: 147px;
+  height: 40px;
+  background: #d83f31;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.freccia-y {
+  width: 40px;
+  height: 147px;
+  background: #d83f31;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
