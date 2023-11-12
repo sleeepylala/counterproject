@@ -13456,23 +13456,6 @@ textarea.form-control-lg {
 body {
   background-image: url(../images/sfondo.png);
 }
-body main {
-  border: 1px solid rgb(72, 0, 255);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-body section {
-  border: 1px solid rgb(128, 255, 0);
-}
-
-.contenitore-titolo {
-  border: 5px solid green;
-}
 
 .titolo {
   color: #d83f31;
@@ -13504,7 +13487,6 @@ section .base-console {
   background: #e9b824;
   -webkit-box-shadow: 6px 8px 10px 3px rgba(0, 0, 0, 0.25);
           box-shadow: 6px 8px 10px 3px rgba(0, 0, 0, 0.25);
-  border: 2px solid blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13594,9 +13576,9 @@ section .base-console .contenitore-schermo .schermo-console {
           justify-content: center;
 }
 section .base-console .contenitore-schermo .schermo-console .display-number {
+  font-family: "Press Start 2P", sans-serif;
   text-align: center;
-  font-family: "Lobster";
-  font-size: 100px;
+  font-size: 80px;
   letter-spacing: 10px;
 }
 section .base-console .contenitore-destro {
@@ -13744,17 +13726,20 @@ section .base-console .contenitore-destro .contenitore-tasto-reset .button-reset
 }
 
 .display-start {
-  font-size: 40px !important;
-  color: #d83f31;
+  font-size: 35px !important;
+  color: black;
   display: none;
+  font-family: "Press Start 2P", sans-serif;
+  text-align: center;
 }
 
 .display-off {
   font-size: 40px !important;
   color: black;
+  font-family: "Press Start 2P", sans-serif;
   display: none;
 }
 
 .schermo-acceso {
-  background-color: #a8e2ff !important;
+  background-color: #ade4ff !important;
 }

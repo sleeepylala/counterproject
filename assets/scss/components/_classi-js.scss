@@ -1,13 +1,16 @@
 .display-start {
-  font-size: 40px !important;
-  color: #d83f31;
+  font-size: 35px !important;
+  color: black;
   display: none;
+  font-family: $primary-font;
+  text-align: center;
 }
 .display-off {
   font-size: 40px !important;
   color: black;
+  font-family: $primary-font;
   display: none;
 }
 .schermo-acceso {
-  background-color: #a8e2ff !important;
+  background-color: #ade4ff !important;
 }
