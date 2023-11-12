@@ -13456,11 +13456,8 @@ textarea.form-control-lg {
 body {
   background-image: url(../images/sfondo.png);
 }
-body div {
-  border: 3px solid red;
-}
 body main {
-  border: 3px solid rgb(72, 0, 255);
+  border: 1px solid rgb(72, 0, 255);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13470,7 +13467,7 @@ body main {
           flex-direction: column;
 }
 body section {
-  border: 3px solid rgb(128, 255, 0);
+  border: 1px solid rgb(128, 255, 0);
 }
 
 .contenitore-titolo {
@@ -13655,6 +13652,11 @@ section .base-console .contenitore-destro .contenitore-tasto-reset .button-reset
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 44px;
+  fill: #d83f31;
+  stroke-width: 2px;
+  stroke: rgba(0, 0, 0, 0.3);
+  -webkit-filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.15));
 }
 
 .freccia-x {
@@ -13671,6 +13673,9 @@ section .base-console .contenitore-destro .contenitore-tasto-reset .button-reset
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .freccia-y {
@@ -13687,6 +13692,9 @@ section .base-console .contenitore-destro .contenitore-tasto-reset .button-reset
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contenitore-tasti {
