@@ -13754,3 +13754,7 @@ section .base-console .contenitore-destro .contenitore-tasto-reset .button-reset
   color: black;
   display: none;
 }
+
+.schermo-acceso {
+  background-color: #a8e2ff !important;
+}
