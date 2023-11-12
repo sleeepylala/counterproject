@@ -108,3 +108,11 @@ arrowTop.addEventListener("click", () => updateConsoleColor(COLORS.RED));
 arrowBottom.addEventListener("click", () => updateConsoleColor(COLORS.BLUE));
 arrowLeft.addEventListener("click", () => updateConsoleColor(COLORS.PURPLE));
 arrowRight.addEventListener("click", () => updateConsoleColor(COLORS.DARK));
+
+document.addEventListener("DOMContentLoaded", function () {
+  var imgElement = document.querySelector("img");
+
+  imgElement.addEventListener("dragstart", function (e) {
+    e.preventDefault();
+  });
+});
