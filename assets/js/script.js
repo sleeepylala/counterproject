@@ -1,21 +1,21 @@
 "use strict";
-//qui seleziono i miei pulsanti principali//
 
+//qui seleziono i miei pulsanti principali//
 const btnAddiction = document.querySelector("#tasto-addiction");
 const btnSubstraction = document.querySelector("#tasto-substraction");
 const btnDoubleAddiction = document.querySelector("#tasto-double-addiction");
 const btnDoubleSubstraction = document.querySelector(
   "#tasto-double-substraction"
 );
-const display = document.querySelector(".display-number");
 const consoleColor = document.querySelector(".base-console");
 
-//qui seleziono i pulsanti on e reset//
+//qui seleziono i pulsanti on e reset e schermo//
 const btnOn = document.querySelector("#button-start");
 const btnReset = document.querySelector("#button-reset");
 const start = document.querySelector("#start-display");
 const off = document.querySelector("#off-display");
 const schermo = document.querySelector(".schermo-console");
+const display = document.querySelector(".display-number");
 
 //qui seleziono i pulsanti freccia//
 const arrowTop = document.querySelector("#freccia-su");
@@ -23,6 +23,7 @@ const arrowBottom = document.querySelector("#freccia-giù");
 const arrowRight = document.querySelector("#freccia-destra");
 const arrowLeft = document.querySelector("#freccia-sinistra");
 
+//qui creo la const con i colori che ho scelto//
 const COLORS = {
   YELLOW: "#e9b824",
   RED: "#FF6D6D",
@@ -31,7 +32,7 @@ const COLORS = {
   DARK: "#2B2730",
 };
 
-let testBtn = false;
+let isConsoleOn = false;
 
 function removeStartOff() {
   start.style.display = off.style.display = "none";
@@ -71,9 +72,9 @@ function reset() {
 //evento tasto on off
 btnOn.addEventListener("click", function () {
   schermo.classList.toggle("schermo-acceso");
-  testBtn = !testBtn;
+  isConsoleOn = !isConsoleOn;
 
-  if (testBtn) {
+  if (isConsoleOn) {
     start.style.display = "block";
     off.style.display = "none";
 
@@ -103,12 +104,13 @@ btnOn.addEventListener("click", function () {
   display.textContent = "";
 });
 
-//evento frecce
+//evento tasti frecce
 arrowTop.addEventListener("click", () => updateConsoleColor(COLORS.RED));
 arrowBottom.addEventListener("click", () => updateConsoleColor(COLORS.BLUE));
 arrowLeft.addEventListener("click", () => updateConsoleColor(COLORS.PURPLE));
 arrowRight.addEventListener("click", () => updateConsoleColor(COLORS.DARK));
 
+//qui elimino il drag delle immagini
 document.addEventListener("DOMContentLoaded", function () {
   var imgElement = document.querySelector("img");
 
