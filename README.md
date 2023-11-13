@@ -27,7 +27,10 @@ Introducing my countdown application! You have the power to increment or decreme
         <li>
             <strong>Package.json:</strong> This file holds information about the project's dependencies and scripts.
         </li>
-    </ul>
+    </ul> 
+    
+# Try it
+-  https://sleeepylala.github.io/counterproject/
 
 # Built with
 
