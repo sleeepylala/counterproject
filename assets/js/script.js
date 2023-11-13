@@ -23,6 +23,10 @@ const arrowBottom = document.querySelector("#freccia-giù");
 const arrowRight = document.querySelector("#freccia-destra");
 const arrowLeft = document.querySelector("#freccia-sinistra");
 
+//qui creo classi comuni per i suoni
+const mainButtons = document.querySelectorAll(".main-button");
+const otherButtons = document.querySelectorAll(".other-button");
+
 //qui creo la const con i colori che ho scelto//
 const COLORS = {
   YELLOW: "#e9b824",
@@ -116,5 +120,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
   imgElement.addEventListener("dragstart", function (e) {
     e.preventDefault();
+  });
+});
+
+//qui aggiungo l'audio ai tasti se la console è on
+mainButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    if (isConsoleOn) {
+      let audio = document.getElementById("clickSound");
+      audio.volume = 0.2;
+      audio.playbackRate = 2;
+      audio.play();
+    } else {
+    }
+  });
+});
+
+otherButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    if (isConsoleOn) {
+      let audio = document.getElementById("clickSound2");
+      audio.volume = 0.2;
+      audio.play();
+    } else {
+    }
   });
 });
