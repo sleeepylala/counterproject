@@ -143,6 +143,10 @@ otherButtons.forEach(function (button) {
       audio.volume = 0.2;
       audio.play();
     } else {
+      btnOn.addEventListener("click", function () {
+        let audio = document.getElementById("clickSound2");
+        audio.play();
+      });
     }
   });
 });
