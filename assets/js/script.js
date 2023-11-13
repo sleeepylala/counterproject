@@ -116,7 +116,7 @@ arrowRight.addEventListener("click", () => updateConsoleColor(COLORS.DARK));
 
 //qui elimino il drag delle immagini
 document.addEventListener("DOMContentLoaded", function () {
-  var imgElement = document.querySelector("img");
+  let imgElement = document.querySelector("img");
 
   imgElement.addEventListener("dragstart", function (e) {
     e.preventDefault();
