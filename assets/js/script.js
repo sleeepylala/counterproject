@@ -1,11 +1,11 @@
 "use strict";
 
 //qui seleziono i miei pulsanti principali//
-const btnAddiction = document.querySelector("#tasto-addiction");
-const btnSubstraction = document.querySelector("#tasto-substraction");
-const btnDoubleAddiction = document.querySelector("#tasto-double-addiction");
+const btnAddiction = document.querySelector("#tasto-addition");
+const btnSubstraction = document.querySelector("#tasto-subtraction");
+const btnDoubleAddiction = document.querySelector("#tasto-double-addition");
 const btnDoubleSubstraction = document.querySelector(
-  "#tasto-double-substraction"
+  "#tasto-double-subtraction"
 );
 const consoleColor = document.querySelector(".base-console");
 
