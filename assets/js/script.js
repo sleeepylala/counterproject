@@ -97,7 +97,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   contenitoreTastoFrecce.appendChild(frecciaY);
   contenitoreTastoFrecce.appendChild(frecciaX);
-
   contenitoreSinistro.appendChild(contenitoreTastoFrecce);
 
   const contenitoreSchermo = document.createElement("div");
@@ -210,7 +209,6 @@ document.addEventListener("DOMContentLoaded", function () {
   contenitoreDestro.appendChild(contenitoreTastoReset);
 
   baseConsole.appendChild(contenitoreSinistro);
-  baseConsole.appendChild(contenitoreTastoFrecce);
   baseConsole.appendChild(contenitoreSchermo);
   baseConsole.appendChild(contenitoreDestro);
 
