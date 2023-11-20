@@ -15,7 +15,7 @@
       content="Welcome to my counter application! Hope you will enjoy it!"
     />
     <meta property="og:type" content="website" />
-  
+
     <title>Vintage Counter Game!</title>
     <link
       rel="icon"
@@ -25,6 +25,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <audio id="clickSound">
@@ -33,141 +34,6 @@
     <audio id="clickSound2">
       <source src="assets/sound click/sound-on-reset.mp3" type="audio/mpeg" />
     </audio>
-    <main>
-      <div class="contenitore-titolo">
-        <h1 class="titolo">Vintage Counter Game!</h1>
-      </div>
-      <!-- inizio base console -->
-      <section>
-        <div class="base-console">
-          <div class="contenitore-sinistro">
-            <div class="contenitore-tasto-on pe-2 other-button"">
-              <div type="button" class="button-on p-1" id="button-start">
-                <img
-                  src="assets/images/button-icon/btn-start.svg"
-                  alt="button start"
-                />
-              </div>
-            </div>
-            <!-- lavoro sui tasti frecce -->
-            <div class="contenitore-tasto-frecce">
-              <div class="freccia-y">
-                <div
-                  type="button"
-                  class="contenitore-btn-freccia-su pt-2"
-                  id="freccia-su"
-                >
-                  <img
-                    src="assets/images/icon-frecce/freccia-su.svg"
-                    alt="freccia su"
-                  />
-                </div>
-                <div
-                  type="button"
-                  class="contenitore-btn-freccia-giù pb-2"
-                  id="freccia-giù"
-                >
-                  <img
-                    src="assets/images/icon-frecce/freccia-sotto.png"
-                    alt="freccia sotto"
-                  />
-                </div>
-              </div>
-              <div class="freccia-x">
-                <div
-                  type="button"
-                  class="contenitore-btn-freccia-sinistra ps-2"
-                  id="freccia-sinistra"
-                >
-                  <img
-                    src="assets/images/icon-frecce/freccia-sinistra.svg"
-                    alt="freccia sinistra"
-                  />
-                </div>
-                <div
-                  type="button"
-                  class="contenitore-btn-freccia-destra pe-2"
-                  id="freccia-destra"
-                >
-                  <img
-                    src="assets/images/icon-frecce/freccia-destra.svg"
-                    alt="freccia destra"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- schermo della console -->
-          <div class="contenitore-schermo">
-            <div class="schermo-console">
-              <div class="display-number"></div>
-              <div class="display-start" id="start-display">
-                start counting...
-              </div>
-              <div class="display-off" id="off-display">OFF</div>
-            </div>
-          </div>
-          <!-- lavoro sui tasti principali operazioni -->
-          <div class="contenitore-destro">
-            <div class="contenitore-tasti">
-              <div class="contenitore-tasti-y">
-                <div
-                  class="contenitore-double-addition main-button"
-                  type="button"
-                  id="tasto-double-addition"
-                >
-                  <img
-                    src="assets/images/icon-tasti-principali/tasto++.svg"
-                    alt="tasto ++"
-                  />
-                </div>
-                <div
-                  class="contenitore-tasto-double-subtraction main-button"
-                  type="button"
-                  id="tasto-double-subtraction"
-                >
-                  <img
-                    src="assets/images/icon-tasti-principali/tasto--.svg"
-                    alt="tasto --"
-                  />
-                </div>
-              </div>
-              <div class="contenitore-tasti-x">
-                <div
-                  class="contenitore-tasto-subtraction main-button"
-                  type="button"
-                  id="tasto-subtraction"
-                >
-                  <img
-                    src="assets/images/icon-tasti-principali/tasto-.svg"
-                    alt="tasto -"
-                  />
-                </div>
-                <div
-                  class="contenitore-tasto-addition main-button"
-                  type="button"
-                  id="tasto-addition"
-                >
-                  <img
-                    src="assets/images/icon-tasti-principali/tasto+.svg"
-                    alt="tasto +"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="contenitore-tasto-reset ps-2 other-button">
-              <div type="button" class="button-reset p-1" id="button-reset">
-                <img
-                  src="assets/images/button-icon/btn-reset.svg"
-                  alt="tasto reset"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>&copy; 2023 Ilaria Ferrauti</footer>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
