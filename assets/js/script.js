@@ -238,9 +238,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const arrowRight = document.querySelector("#freccia-destra");
   const arrowLeft = document.querySelector("#freccia-sinistra");
 
-  const mainButtons = document.querySelectorAll(".main-button");
-  const otherButtons = document.querySelectorAll(".other-button");
-
   const COLORS = {
     YELLOW: "#e9b824",
     RED: "#FF6D6D",
@@ -312,8 +309,6 @@ document.addEventListener("DOMContentLoaded", function () {
     display.textContent = "";
   });
 
-  // ... (Parte mancante del codice)
-
   arrowTop.addEventListener("click", () => updateConsoleColor(COLORS.RED));
   arrowBottom.addEventListener("click", () => updateConsoleColor(COLORS.BLUE));
   arrowLeft.addEventListener("click", () => updateConsoleColor(COLORS.PURPLE));
@@ -324,34 +319,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     imgElement.addEventListener("dragstart", function (e) {
       e.preventDefault();
-    });
-  });
-
-  mainButtons.forEach(function (button) {
-    button.addEventListener("click", function () {
-      if (isConsoleOn) {
-        let audio = document.getElementById("clickSound");
-        audio.volume = 0.2;
-        audio.playbackRate = 2;
-        audio.play();
-      } else {
-        // Gestisci il caso in cui la console è spenta (se necessario)
-      }
-    });
-  });
-
-  otherButtons.forEach(function (button) {
-    button.addEventListener("click", function () {
-      if (isConsoleOn) {
-        let audio = document.getElementById("clickSound2");
-        audio.volume = 0.2;
-        audio.play();
-      } else {
-        btnOn.addEventListener("click", function () {
-          let audio = document.getElementById("clickSound2");
-          audio.play();
-        });
-      }
     });
   });
 });
