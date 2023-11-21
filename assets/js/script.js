@@ -3,6 +3,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const main = document.createElement("main");
 
+  //TITOLO//
   const contenitoreTitolo = document.createElement("div");
   contenitoreTitolo.className = "contenitore-titolo";
 
@@ -13,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   contenitoreTitolo.appendChild(titolo);
   main.appendChild(contenitoreTitolo);
 
+  //INIZIO BASE CONSOLE//
   const section = document.createElement("section");
   const baseConsole = document.createElement("div");
   baseConsole.className = "base-console";
@@ -20,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const contenitoreSinistro = document.createElement("div");
   contenitoreSinistro.className = "contenitore-sinistro";
 
+  //TASTO ON//
   const contenitoreTastoOn = document.createElement("div");
   contenitoreTastoOn.className = "contenitore-tasto-on pe-2 other-button";
 
@@ -36,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
   contenitoreTastoOn.appendChild(buttonStart);
   contenitoreSinistro.appendChild(contenitoreTastoOn);
 
+  //TASTO FRECCE//
   const contenitoreTastoFrecce = document.createElement("div");
   contenitoreTastoFrecce.className = "contenitore-tasto-frecce";
 
@@ -99,6 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
   contenitoreTastoFrecce.appendChild(frecciaX);
   contenitoreSinistro.appendChild(contenitoreTastoFrecce);
 
+  //DISPLAY//
   const contenitoreSchermo = document.createElement("div");
   contenitoreSchermo.className = "contenitore-schermo";
 
@@ -127,6 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const contenitoreDestro = document.createElement("div");
   contenitoreDestro.className = "contenitore-destro";
 
+  //TASTI PRINCIPALI//
   const contenitoreTasti = document.createElement("div");
   contenitoreTasti.className = "contenitore-tasti";
 
@@ -192,6 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   contenitoreDestro.appendChild(contenitoreTasti);
 
+  //TASTO RESET//
   const contenitoreTastoReset = document.createElement("div");
   contenitoreTastoReset.className = "contenitore-tasto-reset ps-2 other-button";
 
@@ -217,7 +224,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.body.appendChild(main);
 
-  // Gestione dell'interattività
+  //GESTIONE INTERATTIVITA'//
   const btnAddiction = document.querySelector("#tasto-addition");
   const btnSubstraction = document.querySelector("#tasto-subtraction");
   const btnDoubleAddiction = document.querySelector("#tasto-double-addition");
